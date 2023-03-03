@@ -1,15 +1,15 @@
-import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useState } from "react";
-import { Link } from "react-router-dom";
-import logo from "../../assets/logo-small.png";
 import Container from "./Container";
-const Header = () => {
-  const [isNavExpanded, setIsNavExpanded] = useState(false);
+import logo from "../../assets/logo-small.png";
+import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faXmark, faBars } from "@fortawesome/free-solid-svg-icons";
 
+const Header = () => {
+  const [isNavExpand, setIsNavExpand] = useState(false);
   const closeNav = () => {
-    if (isNavExpanded) {
-      setIsNavExpanded(false);
+    if (isNavExpand) {
+      setIsNavExpand(false);
     }
   };
   return (
@@ -23,19 +23,21 @@ const Header = () => {
             className='hamburger'
             type='button'
             aria-label={`Click to ${
-              isNavExpanded ? "close" : "open"
-            } navigation menu`}
-            onClick={() => setIsNavExpanded(!isNavExpanded)}
+              isNavExpand ? "close" : "Open"
+            } navigator menu`}
+            onClick={() => {
+              setIsNavExpand(!isNavExpand);
+            }}
           >
-            {isNavExpanded ? (
+            {isNavExpand ? (
               <FontAwesomeIcon icon={faXmark} />
             ) : (
               <FontAwesomeIcon icon={faBars} />
             )}
           </button>
           <ul
-            className={isNavExpanded ? "nav-links expanded" : "nav-links"}
-            aria-hidden={isNavExpanded ? false : true}
+            className={isNavExpand ? "nav-links expanded" : "nav-links"}
+            aria-hidden={isNavExpand ? false : true}
           >
             <li>
               <Link to='/' className='nav-link card-title' onClick={closeNav}>
@@ -52,13 +54,13 @@ const Header = () => {
               </Link>
             </li>
             <li>
-              <a
-                href='/order-online'
+              <Link
+                to='/Menu'
                 className='nav-link card-title'
                 onClick={closeNav}
               >
                 Menu
-              </a>
+              </Link>
             </li>
             <li>
               <Link
@@ -89,4 +91,5 @@ const Header = () => {
     </header>
   );
 };
+
 export default Header;
