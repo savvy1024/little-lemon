@@ -1,5 +1,6 @@
 import CallToAction from "../components/layout/CallToAction"
 import HeroImage from '../assets/hero-image-sm.jpg'
+import Special from "../components/layout/Special";
 
 const Home =()=>{
     return(
@@ -14,6 +15,7 @@ const Home =()=>{
         image={HeroImage}
 
         />
+        <Special />
         
 
 
