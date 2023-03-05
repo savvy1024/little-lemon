@@ -3,6 +3,11 @@ import Container from "./Container";
 import GreekSalad from '../../assets/greek-salad.jpg'
 import Bruschetta from '../../assets/bruschetta.jpg'
 import SpecialsCard from "../cards/SpecialsCard";
+import LemonDessert from '../../assets/lemon-dessert.jpg'
+import Pasta from '../../assets/pasta.jpg';
+import GrilledFish from '../../assets/grilled-fiish.jpg';
+import Burger from '../../assets/burger.jpg';
+
 
 
 const Special=({header = true})=>{
@@ -18,6 +23,37 @@ const Special=({header = true})=>{
             image: Bruschetta,
             price: 5.99,
             description: 'Our Bruschetta is made from grilled bread that has been smeared with garlic and seasoned with salt and olive oil.',
+            link: '#',
+          },
+
+          {
+            name:'Lemon Dessert',
+            image:LemonDessert,
+            price:'5.99',
+            description:'This comes straight from grandma’s recipe book, every last ingredient has been sourced and is as authentic as can be imagined.',
+            link:'#',
+    
+          },
+          {
+            name: 'Pasta',
+            image: Pasta,
+            price: 18.99,
+            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquet nec in ornare.',
+            link: '#',
+          },
+          {
+            name: 'Grilled Fish',
+            image: GrilledFish,
+            price: 6.99,
+            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquet nec in ornare.',
+            link: '#',
+          },
+      
+          {
+            name: 'Burger',
+            image: Burger,
+            price: 8.99,
+            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquet nec in ornare.',
             link: '#',
           },
     ]
