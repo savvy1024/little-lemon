@@ -392,9 +392,10 @@ select:focus {
   background-color: var(--highlight-light);
 }
 .footer-wrapper {
-  display: flex;
-  gap: 30px;
-  justify-content: space-between;
+ display: flex;
+ justify-content: space-between;
+ gap:30px;
+
 }
 .footer .logo img {
   width: 150px;

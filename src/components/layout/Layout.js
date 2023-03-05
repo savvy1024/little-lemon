@@ -1,4 +1,5 @@
 
+import Footer from './Footer';
 import Header from './Header';
 
 const Layout = ({ children }) => {
@@ -6,6 +7,7 @@ const Layout = ({ children }) => {
     <div>
       <Header />
       <main>{children}</main>
+      <Footer />
 
     </div>
   );
