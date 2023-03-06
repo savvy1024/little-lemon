@@ -55,7 +55,7 @@ const Header = () => {
             </li>
             <li>
               <Link
-                to='/Menu'
+                to='/menu'
                 className='nav-link card-title'
                 onClick={closeNav}
               >
