@@ -1,6 +1,8 @@
 import CallToAction from "../components/layout/CallToAction"
 import HeroImage from '../assets/hero-image-sm.jpg'
 import Special from "../components/layout/Special";
+import Testimonials from "../components/layout/Testimonials";
+import Profiles from "../components/layout/Profiles";
 
 const Home =()=>{
     return(
@@ -16,6 +18,10 @@ const Home =()=>{
 
         />
         <Special />
+        <Testimonials />
+        <Profiles />
+       
+
         
 
 
