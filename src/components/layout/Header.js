@@ -81,7 +81,7 @@ const Header = () => {
               </Link>
             </li>
             <li>
-              <Link to='/' className='nav-link card-title' onClick={closeNav}>
+              <Link to='/login' className='nav-link card-title' onClick={closeNav}>
                 Login
               </Link>
             </li>

@@ -5,6 +5,8 @@ import HomePage from "./pages/Home";
 import AboutUs from "./pages/About";
 import ScrollToTop from "./components/ScrollToTop";
 import OrderOnline from "./pages/OrderOnline";
+import Booking from './pages/Booking';
+import Menu from "./pages/Menu";
 
 function App() {
   return (
@@ -14,7 +16,8 @@ function App() {
           <Route path='/' element={<HomePage />} />
           <Route path='/about' element={<AboutUs />} />
           <Route path='/order-online' element={<OrderOnline />} />
-          <Route path='/menu'  element={<OrderOnline />} />
+          <Route path='/menu'  element={<Menu />} />
+          <Route path='/booking' element={<Booking />} />
         </Routes>
       </Layout>
     </ScrollToTop>
