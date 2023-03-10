@@ -14,7 +14,7 @@ const DateSelector = ({
   updateTimesCallback,
 }) => {
   useEffect(() => {
-    if (enablePastDates) {
+    if (!enablePastDates) {
       const dateToday = new Date();
       let month = dateToday.getMonth() + 1;
       let day = dateToday.getDate();

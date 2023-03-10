@@ -7,6 +7,7 @@ import ScrollToTop from "./components/ScrollToTop";
 import OrderOnline from "./pages/OrderOnline";
 import Booking from './pages/Booking';
 import Menu from "./pages/Menu";
+import Confirmation from './pages/ConfirmedBooking';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path='/order-online' element={<OrderOnline />} />
           <Route path='/menu'  element={<Menu />} />
           <Route path='/booking' element={<Booking />} />
+          <Route path='/confirmation' element={<Confirmation />} />
         </Routes>
       </Layout>
     </ScrollToTop>

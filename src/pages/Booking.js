@@ -6,10 +6,12 @@ import HeroImage from '../assets/book-table.jpg';
 import BookingForm from '../components/form/BookingForm';
 
 
+
 const ACTIONS = {
   UPDATE_TIMES: 'update_times',
   INITAILIZE_TIMES: 'initialize_times',
 };
+
 
 const initialState = { times: [] };
 
@@ -60,10 +62,13 @@ const Booking = () => {
     }
     initializeTimes();
   }, []);
+
+
   return (
     <>
       <CallToAction primaryText='Reserve a Table' secondaryText='Dine with us!' description='' image={HeroImage} />
       <BookingForm availableTimes={state.times} reservationHandler={submitForm} updateTimesCallback={updateTimesCallback} />
+    
     </>
   );
 };
