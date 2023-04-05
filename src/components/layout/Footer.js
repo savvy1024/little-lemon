@@ -53,7 +53,7 @@ const Footer=()=>{
                                 <FontAwesomeIcon icon={faInstagram}/></a></li>
                                 <li><a href="https://youtube.com" target="_blank" rel="noreferrer">
                                 <FontAwesomeIcon icon={faYoutube}/></a></li>
-                                <li><a href="https://linkedin.com" target="_blank" rel="noreferrer">
+                                <li><a href="https://linkedin.com" target="_blank" rel="noreferrer"> 
                                 <FontAwesomeIcon icon={faLinkedin}/></a></li>
                         
                         </ul>
